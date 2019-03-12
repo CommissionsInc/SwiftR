@@ -9,12 +9,12 @@
 import Foundation
 import WebKit
 
-@objc public enum ConnectionType: Int {
+public enum ConnectionType: Int {
     case hub
     case persistent
 }
 
-@objc public enum State: Int {
+public enum State: Int {
     case connecting
     case connected
     case disconnected
@@ -398,7 +398,7 @@ open class SignalR: NSObject, SwiftRWebDelegate {
             })
         } else {
             let result = webView.stringByEvaluatingJavaScript(from: script)
-            callback?(result as AnyObject!)
+            callback?(result as AnyObject)
         }
     }
     
@@ -454,7 +454,7 @@ open class SignalR: NSObject, SwiftRWebDelegate {
     // MARK: - Web delegate methods
     
 #if os(iOS)
-    open func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    open func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
         return shouldHandleRequest(request)
     }
 #else

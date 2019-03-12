@@ -1,8 +1,9 @@
 Pod::Spec.new do |s|
-  s.name = 'SwiftR'
+  s.name = 'CincSwiftR'
   s.version = '0.14.0'
+  s.swift_version = '4.2'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
-  s.summary = 'Swift client for SignalR'
+  s.summary = 'Swift client for SignalR. ***This is forked into the CINC repository for Swift version upgrade.***'
   s.homepage = 'https://github.com/adamhartford/SwiftR'
   s.social_media_url = 'http://twitter.com/adamhartford'
   s.authors = { 'Adam Hartford' => 'adam@adamhartford.com' }
