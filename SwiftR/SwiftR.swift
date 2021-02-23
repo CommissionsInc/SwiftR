@@ -432,9 +432,9 @@ open class SignalR: NSObject, SwiftRWebDelegate {
 #else
     public func webView(_ webView: WebView!, decidePolicyForNavigationAction actionInformation: [AnyHashable : Any]!, request: URLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
         
-        if shouldHandleRequest(request as URLRequest) {
-            listener.use()
-        }
+//        if shouldHandleRequest(request as URLRequest) {
+//            listener.use()
+//        }
     }
 #endif
     
