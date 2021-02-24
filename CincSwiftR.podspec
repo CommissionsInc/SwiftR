@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CincSwiftR'
-  s.version = "0.15.05"
+  s.version = "0.15.06"
   s.swift_version = '4.2'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Swift client for SignalR. ***This is forked into the CINC repository for Swift version upgrade.***'
